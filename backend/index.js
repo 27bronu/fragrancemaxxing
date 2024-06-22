@@ -4,6 +4,8 @@ import jwt from 'jsonwebtoken';
 import multer from 'multer';
 import path from 'path';
 import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const port = 4000;
 const app = express();
@@ -13,8 +15,10 @@ app.use(cors());
 
 // connection with mongodb
 mongoose.connect(
-  "mongodb+srv://FG:user123@cluster0.mgxaqw3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  process.env.MONGODB_URI
 );
+
+console.log(process.env.MONGODB_URI);
 
 // api creation
 app.get("/", (req, res) => {
