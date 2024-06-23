@@ -30,13 +30,11 @@ const AddProduct = () => {
     let formData = new FormData();
     formData.append("product", image);
 
-    let h = new Headers();
-    h.append("Accept", "application/json");
-    h.append ("Acess-Control-Allow-Origin", "*")
-
     await fetch("https://fragrance-maxxing-api.onrender.com/upload", {
       method: "POST",
-      headers: h,
+      headers: {
+        Accept: "application/json",
+      },
       body: formData,
     })
       .then((resp) => resp.json())
