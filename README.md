@@ -9,4 +9,4 @@ The project is a fragrance store application aimed at offering users an immersiv
 ### Project URLs
 
 - **Home**: [Fragrance Maxxing Frontend](https://fragrancemaxxing-frontend.vercel.app)
-- **Admin Dashboard**: [Fragrance Maxxing Admin](https://fragrancemaxxing-admin.vercel.app/listproduct)
+- **Admin Dashboard**: [Fragrance Maxxing Admin](https://fragrancemaxxing-admin.vercel.app/)
