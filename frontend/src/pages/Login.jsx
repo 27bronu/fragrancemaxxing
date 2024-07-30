@@ -37,7 +37,7 @@ const Login = () => {
   const signup = async () => {
     console.log("signup function executed", formData);
     let responseData;
-    await fetch("https://fragrance-maxxing-api.onrender.com:4000/signup", {
+    await fetch("https://fragrance-maxxing-api.onrender.com/signup", {
       method: "POST",
       headers: {
         Accept: "application/formData",
